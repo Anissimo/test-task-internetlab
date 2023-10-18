@@ -1,0 +1,36 @@
+@import "mixins";
+
+// Базовые стили
+body {
+  background-color: #fff;
+}
+
+// @include body-16;
+
+// Для экранов шириной 1920px и меньше
+@media (max-width: 1920px) {
+  body {
+    background-color: #fff;
+  }
+}
+
+// Для экранов шириной 768px и меньше
+@media (max-width: 768px) {
+  body {
+    background-color: #fff;
+  }
+}
+
+// Для экранов шириной 375px и меньше
+@media (max-width: 375px) {
+  body {
+    background-color: #fff;
+  }
+}
+
+// Для экранов шириной 320px и меньше
+@media (max-width: 320px) {
+  body {
+    background-color: #fff;
+  }
+}

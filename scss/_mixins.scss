@@ -1,0 +1,138 @@
+$font-family: "Graphik LCG";
+
+@mixin body-12-s-bold {
+  color: var(--Black, #191c1f);
+  font-family: $font-family;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+@mixin body-14-s-bold {
+  color: var(--Black, #191c1f);
+  font-family: $font-family;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+@mixin body-16-s-bold {
+  color: var(--Black, #191c1f);
+  font-family: $font-family;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
+@mixin body-18-s-bold {
+  color: var(--Black, #191c1f);
+  font-family: $font-family;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+@mixin caption-12 {
+  color: var(--Black, #191c1f);
+  font-family: $font-family;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.09rem;
+  text-transform: uppercase;
+}
+
+@mixin body-12 {
+  color: var(--Black, #191c1f);
+  font-family: $font-family;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+@mixin body-14 {
+  color: var(--Black, #191c1f);
+  font-family: $font-family;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+@mixin body-16 {
+  color: var(--Black, #191c1f);
+  font-family: $font-family;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+@mixin body-18 {
+  color: var(--Black, #191c1f);
+  font-family: $font-family;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+@mixin headline-1 {
+  color: var(--Black, #191c1f);
+  font-family: $font-family;
+  font-size: 3.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4rem;
+}
+
+@mixin headline-2 {
+  color: var(--Black, #191c1f);
+  font-family: $font-family;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.5rem;
+}
+
+@mixin headline-3 {
+  color: var(--Black, #191c1f);
+  font-family: $font-family;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+@mixin headline-4 {
+  color: var(--Black, #191c1f);
+  font-family: $font-family;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+@mixin headline-5 {
+  color: var(--Black, #191c1f);
+  font-family: $font-family;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+@mixin headline-6 {
+  color: var(--Black, #191c1f);
+  font-family: $font-family;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
