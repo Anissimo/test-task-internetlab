@@ -3,34 +3,483 @@
 // Базовые стили
 body {
   background-color: #fff;
+  font-family: "Graphik LCG";
 }
 
 // @include body-16;
 
 // Для экранов шириной 1920px и меньше
 @media (max-width: 1920px) {
-  body {
-    background-color: #fff;
+  .app {
+  }
+
+  .header {
+    &__toggle-container {
+      &--switch-toggle {
+      }
+
+      &--text {
+      }
+    }
+
+    &__menu-container {
+      &--text {
+      }
+    }
+  }
+
+  .main {
+    &__text1 {
+    }
+
+    &__text2 {
+    }
+
+    &__button {
+    }
+  }
+
+  .howtowork {
+    &__container {
+      &-text {
+        &--goal-card {
+          &--img {
+          }
+
+          &--text1 {
+          }
+
+          &--text2 {
+          }
+        }
+      }
+    }
+  }
+
+  .third-block {
+    &__block {
+      &--text1 {
+      }
+
+      &--text2 {
+      }
+    }
+
+    &__img {
+    }
+  }
+
+  .reviews {
+    &__text {
+    }
+
+    .reviews__scroll-bar {
+      &--container {
+        &--card {
+        }
+      }
+    }
+  }
+
+  .q-n-a {
+    &__text {
+    }
+
+    &__block {
+      &--text1 {
+      }
+
+      &--text2 {
+      }
+
+      &--p-svg {
+      }
+    }
+  }
+
+  .full-reviews {
+    &__card {
+      &--text1 {
+      }
+
+      &--text2 {
+      }
+    }
+  }
+
+  .form {
+    &__text {
+    }
+
+    &__input {
+    }
+
+    &__checkbox {
+    }
+
+    &__button {
+    }
+  }
+
+  .footer {
+    &__text {
+    }
   }
 }
 
 // Для экранов шириной 768px и меньше
 @media (max-width: 768px) {
-  body {
-    background-color: #fff;
+  .app {
+  }
+
+  .header {
+    &__toggle-container {
+      &--switch-toggle {
+      }
+
+      &--text {
+      }
+    }
+
+    &__menu-container {
+      &--text {
+      }
+    }
+  }
+
+  .main {
+    &__text1 {
+    }
+
+    &__text2 {
+    }
+
+    &__button {
+    }
+  }
+
+  .howtowork {
+    &__container {
+      &-text {
+        &--goal-card {
+          &--img {
+          }
+
+          &--text1 {
+          }
+
+          &--text2 {
+          }
+        }
+      }
+    }
+  }
+
+  .third-block {
+    &__block {
+      &--text1 {
+      }
+
+      &--text2 {
+      }
+    }
+
+    &__img {
+    }
+  }
+
+  .reviews {
+    &__text {
+    }
+
+    .reviews__scroll-bar {
+      &--container {
+        &--card {
+        }
+      }
+    }
+  }
+
+  .q-n-a {
+    &__text {
+    }
+
+    &__block {
+      &--text1 {
+      }
+
+      &--text2 {
+      }
+
+      &--p-svg {
+      }
+    }
+  }
+
+  .full-reviews {
+    &__card {
+      &--text1 {
+      }
+
+      &--text2 {
+      }
+    }
+  }
+
+  .form {
+    &__text {
+    }
+
+    &__input {
+    }
+
+    &__checkbox {
+    }
+
+    &__button {
+    }
+  }
+
+  .footer {
+    &__text {
+    }
   }
 }
 
 // Для экранов шириной 375px и меньше
 @media (max-width: 375px) {
-  body {
-    background-color: #fff;
+  .app {
+  }
+
+  .header {
+    &__toggle-container {
+      &--switch-toggle {
+      }
+
+      &--text {
+      }
+    }
+
+    &__menu-container {
+      &--text {
+      }
+    }
+  }
+
+  .main {
+    &__text1 {
+    }
+
+    &__text2 {
+    }
+
+    &__button {
+    }
+  }
+
+  .howtowork {
+    &__container {
+      &-text {
+        &--goal-card {
+          &--img {
+          }
+
+          &--text1 {
+          }
+
+          &--text2 {
+          }
+        }
+      }
+    }
+  }
+
+  .third-block {
+    &__block {
+      &--text1 {
+      }
+
+      &--text2 {
+      }
+    }
+
+    &__img {
+    }
+  }
+
+  .reviews {
+    &__text {
+    }
+
+    .reviews__scroll-bar {
+      &--container {
+        &--card {
+        }
+      }
+    }
+  }
+
+  .q-n-a {
+    &__text {
+    }
+
+    &__block {
+      &--text1 {
+      }
+
+      &--text2 {
+      }
+
+      &--p-svg {
+      }
+    }
+  }
+
+  .full-reviews {
+    &__card {
+      &--text1 {
+      }
+
+      &--text2 {
+      }
+    }
+  }
+
+  .form {
+    &__text {
+    }
+
+    &__input {
+    }
+
+    &__checkbox {
+    }
+
+    &__button {
+    }
+  }
+
+  .footer {
+    &__text {
+    }
   }
 }
 
 // Для экранов шириной 320px и меньше
 @media (max-width: 320px) {
-  body {
-    background-color: #fff;
+  .app {
+  }
+
+  .header {
+    &__toggle-container {
+      &--switch-toggle {
+      }
+
+      &--text {
+      }
+    }
+
+    &__menu-container {
+      &--text {
+      }
+    }
+  }
+
+  .main {
+    &__text1 {
+    }
+
+    &__text2 {
+    }
+
+    &__button {
+    }
+  }
+
+  .howtowork {
+    &__container {
+      &-text {
+        &--goal-card {
+          &--img {
+          }
+
+          &--text1 {
+          }
+
+          &--text2 {
+          }
+        }
+      }
+    }
+  }
+
+  .third-block {
+    &__block {
+      &--text1 {
+      }
+
+      &--text2 {
+      }
+    }
+
+    &__img {
+    }
+  }
+
+  .reviews {
+    &__text {
+    }
+
+    .reviews__scroll-bar {
+      &--container {
+        &--card {
+        }
+      }
+    }
+  }
+
+  .q-n-a {
+    &__text {
+    }
+
+    &__block {
+      &--text1 {
+      }
+
+      &--text2 {
+      }
+
+      &--p-svg {
+      }
+    }
+  }
+
+  .full-reviews {
+    &__card {
+      &--text1 {
+      }
+
+      &--text2 {
+      }
+    }
+  }
+
+  .form {
+    &__text {
+    }
+
+    &__input {
+    }
+
+    &__checkbox {
+    }
+
+    &__button {
+    }
+  }
+
+  .footer {
+    &__text {
+    }
   }
 }

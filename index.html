@@ -10,65 +10,102 @@
     <div class="app">
       <header class="header">
         <div class="header__toggle-container">
-          <button class="switch-toggle"></button>
-          <p>testLab</p>
+          <button class="header__toggle-container--switch-toggle"></button>
+          <p class="header__toggle-container--text">testLab</p>
         </div>
         <nav class="header__menu-container">
-          <p>Как это работает</p>
-          <p>3-й блок</p>
-          <p>Вопросы и ответы</p>
-          <p>Форма</p>
+          <p class="header__menu-container--text">Как это работает</p>
+          <p class="header__menu-container--text">3-й блок</p>
+          <p class="header__menu-container--text">Вопросы и ответы</p>
+          <p class="header__menu-container--text">Форма</p>
         </nav>
       </header>
       <main class="main">
-        <p>Говорят, никогда не поздно сменить профессию</p>
-        <p>Сделай круто тестовое задание и у тебя получится</p>
-        <button>Проще простого!</button>
+        <p class="main__text1">Говорят, никогда не поздно сменить профессию</p>
+        <p class="main__text2">
+          Сделай круто тестовое задание и у тебя получится
+        </p>
+        <button class="main__button">Проще простого!</button>
       </main>
-      <section class="how-to-work">
-        <div class="how-to-work__goals-container">
-          <p>Как это работает</p>
-          <div class="goal-card">
-            <img src="./public/icons/waiting.svg" alt="waiting" />
-            <p>Прочитай задание внимательно</p>
-            <p>Думаю у тебя не займет это больше двух-трех минут</p>
+      <section class="howtowork">
+        <div class="howtowork__container">
+          <p class="howtowork__container-text">Как это работает</p>
+          <div class="howtowork__container-text--goal-card">
+            <img
+              class="howtowork__container-text--goal-card--img"
+              src="./public/icons/waiting.svg"
+              alt="waiting"
+            />
+            <p class="howtowork__container-text--goal-card--text1">
+              Прочитай задание внимательно
+            </p>
+            <p class="howtowork__container-text--goal-card--text2">
+              Думаю у тебя не займет это больше двух-трех минут
+            </p>
           </div>
-          <div class="goal-card">
-            <img src="./public/icons/delivery-truck.svg" alt="delivery-truck" />
-            <p>Изучи весь макет заранее</p>
-            <p>
+          <div class="howtowork__container-text--goal-card">
+            <img
+              class="howtowork__container-text--goal-card--img"
+              src="./public/icons/delivery-truck.svg"
+              alt="delivery-truck"
+            />
+            <p class="howtowork__container-text--goal-card--text1">
+              Изучи весь макет заранее
+            </p>
+            <p class="howtowork__container-text--goal-card--text2">
               Подумай как это будет работать на разных разрешениях и при скролле
             </p>
           </div>
-          <div class="goal-card">
-            <img src="./public/icons/secure.svg" alt="secure" />
-            <p>Сделай хорошо</p>
-            <p>Чтобы мы могли тебе доверить подобные задачи в будущем</p>
+          <div class="howtowork__container-text--goal-card">
+            <img
+              class="howtowork__container-text--goal-card--img"
+              src="./public/icons/secure.svg"
+              alt="secure"
+            />
+            <p class="howtowork__container-text--goal-card--text1">
+              Сделай хорошо
+            </p>
+            <p class="howtowork__container-text--goal-card--text2">
+              Чтобы мы могли тебе доверить подобные задачи в будущем
+            </p>
           </div>
-          <div class="goal-card">
-            <img src="./public/icons/money-bags.svg" alt="money-bags" />
-            <p>Получи предложение</p>
-            <p>
+          <div class="howtowork__container-text--goal-card">
+            <img
+              class="howtowork__container-text--goal-card--img"
+              src="./public/icons/money-bags.svg"
+              alt="money-bags"
+            />
+            <p class="howtowork__container-text--goal-card--text1">
+              Получи предложение
+            </p>
+            <p class="howtowork__container-text--goal-card--text2">
               Ну тут все просто, не я придумал правила, но думаю так и будет)))
             </p>
           </div>
         </div>
         <div class="third-block">
-          <div class="block">
-            <p>Круто, ты дошел до третьего блока</p>
-            <p>
+          <div class="third-block__block">
+            <p class="third-block__block--text1">
+              Круто, ты дошел до третьего блока
+            </p>
+            <p class="third-block__block--text2">
               63% опрошенных пользовались кредитами из-за того, что не могли
               покрыть непредвиденные расходы свыше 15 000 ₽. Доступ к
               заработанным деньгам помогает отказаться от кредитов и экономить
               деньги на процентах и штрафах.
             </p>
           </div>
-          <img src="./public/images/unnamed.jpg" alt="unnamed" />
+          <img
+            class="third-block__img"
+            src="./public/images/unnamed.jpg"
+            alt="unnamed"
+          />
         </div>
       </section>
       <section class="reviews">
-        <h2>Отзывы</h2>
-        <div class="scroll-bar">
+        <h2 class="reviews__text">Отзывы</h2>
+
+        <div class="reviews__scroll-bar">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -81,8 +118,13 @@
               fill="#C2C8CD"
             />
           </svg>
-          <div class="scroll-bar-container">
+
+          <div class="reviews__scroll-bar--container">
             <!-- Здесь будут отрисовываются отзывы посредством reviews.js -->
+            <!-- class="reviews__scroll-bar--container--card" -->
+            <div class="reviews__scroll-bar--container--card"></div>
+          </div>
+
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -102,7 +144,6 @@
               </clipPath>
             </defs>
           </svg>
-          Copy
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="108"
@@ -118,23 +159,43 @@
           </svg>
         </div>
       </section>
-      <section class="questions-and-answers">
-        <h2>Вопросы и ответы</h2>
-        <div class="qa-block">
+      <section class="q-n-a">
+        <h2 class="q-n-a__text">Вопросы и ответы</h2>
+        <div class="q-n-a__block">
           <!-- Здесь будут отрисовываются отзывы посредством main.js -->
+          <!-- class="q-n-a__block--text1" -->
+          <!-- class="q-n-a__block--text2" -->
+          <!-- class="q-n-a__block--p-svg" -->
+          <div class="q-n-a__block--text1"></div>
+          <div class="q-n-a__block--text2"></div>
+          <div class="q-n-a__block--p-svg"></div>
         </div>
       </section>
       <section class="full-reviews">
         <!-- Здесь будут отрисовываются отзывы посредством fullReviews.js -->
+        <!-- class="full-reviews__card" -->
+        <!-- class="full-reviews__card--text1" -->
+        <!-- class="full-reviews__card--text2" -->
+        <div class="full-reviews__card"></div>
+        <div class="full-reviews__card--text1"></div>
+        <div class="full-reviews__card--text2"></div>
       </section>
       <form class="form">
-        <h2>Отправь форму</h2>
-        <input type="text" name="name" placeholder="Имя" />
-        <input type="tel" name="phone" placeholder="Телефон" />
-        <input type="checkbox" name="consent" /> Согласен, отказываюсь
-        <button type="submit">Отправить</button>
+        <h2 class="form__text">Отправь форму</h2>
+        <input class="form__input" type="text" name="name" placeholder="Имя" />
+        <input
+          class="form__input"
+          type="tel"
+          name="phone"
+          placeholder="Телефон"
+        />
+        <input class="form__checkbox" type="checkbox" name="consent" />
+        Согласен, отказываюсь
+        <button class="form__button" type="submit">Отправить</button>
       </form>
-      <footer class="footer">© 2021 Лаборатория интернет</footer>
+      <footer class="footer">
+        <p class="footer__text">© 2021 Лаборатория интернет</p>
+      </footer>
     </div>
     <script type="module" src="js/collections.js"></script>
     <script src="js/app.js"></script>

@@ -1,0 +1,115 @@
+.app {
+}
+
+.header {
+  &__toggle-container {
+    &--switch-toggle {
+    }
+
+    &--text {
+    }
+  }
+
+  &__menu-container {
+    &--text {
+    }
+  }
+}
+
+.main {
+  &__text1 {
+  }
+
+  &__text2 {
+  }
+
+  &__button {
+  }
+}
+
+.howtowork {
+  &__container {
+    &-text {
+      &--goal-card {
+        &--img {
+        }
+
+        &--text1 {
+        }
+
+        &--text2 {
+        }
+      }
+    }
+  }
+}
+
+.third-block {
+  &__block {
+    &--text1 {
+    }
+
+    &--text2 {
+    }
+  }
+
+  &__img {
+  }
+}
+
+.reviews {
+  &__text {
+  }
+
+  .reviews__scroll-bar {
+    &--container {
+      &--card{
+      }
+    }
+  }
+}
+
+.q-n-a {
+  &__text{
+  }
+
+  &__block{
+    &--text1{
+    }
+
+    &--text2{
+    }
+
+    &--p-svg{
+    }
+  }
+}
+
+.full-reviews{
+   &__card{
+     &--text1{
+     }
+
+     &--text2{
+     }
+   }
+}
+
+.form{
+   &__text{
+   }
+
+   &__input{
+   }
+
+   &__checkbox{
+   }
+
+   &__button{
+   }
+}
+
+.footer{
+   &__text{
+   }
+}
