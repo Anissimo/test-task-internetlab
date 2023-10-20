@@ -8,19 +8,22 @@
   </head>
   <body>
     <div class="app">
-      <header class="header">
-        <div class="header__toggle-container">
-          <button class="header__toggle-container--switch-toggle"></button>
-          <p class="header__toggle-container--text">testLab</p>
-        </div>
-        <nav class="header__menu-container">
-          <p class="header__menu-container--text">Как это работает</p>
-          <p class="header__menu-container--text">3-й блок</p>
-          <p class="header__menu-container--text">Вопросы и ответы</p>
-          <p class="header__menu-container--text">Форма</p>
-        </nav>
-      </header>
       <main class="main">
+        <header class="header">
+          <div class="header__toggle">
+            <div class="header__toggle--container">
+              <div class="header__toggle--container--blue"></div>
+              <div class="header__toggle--container--white"></div>
+            </div>
+            <p class="header__toggle--text">testLab</p>
+          </div>
+          <nav class="header__menu">
+            <p class="header__menu--text">Как это работает</p>
+            <p class="header__menu--text">3-й блок</p>
+            <p class="header__menu--text">Вопросы и ответы</p>
+            <p class="header__menu--text">Форма</p>
+          </nav>
+        </header>
         <p class="main__text1">Говорят, никогда не поздно сменить профессию</p>
         <p class="main__text2">
           Сделай круто тестовое задание и у тебя получится
@@ -28,57 +31,55 @@
         <button class="main__button">Проще простого!</button>
       </main>
       <section class="howtowork">
+        <p class="howtowork__text">Как это работает</p>
         <div class="howtowork__container">
-          <p class="howtowork__container-text">Как это работает</p>
-          <div class="howtowork__container-text--goal-card">
+          <div class="howtowork__container--goal-card">
             <img
-              class="howtowork__container-text--goal-card--img"
+              class="howtowork__container--goal-card--img"
               src="./public/icons/waiting.svg"
               alt="waiting"
             />
-            <p class="howtowork__container-text--goal-card--text1">
+            <p class="howtowork__container--goal-card--text1">
               Прочитай задание внимательно
             </p>
-            <p class="howtowork__container-text--goal-card--text2">
+            <p class="howtowork__container--goal-card--text2">
               Думаю у тебя не займет это больше двух-трех минут
             </p>
           </div>
-          <div class="howtowork__container-text--goal-card">
+          <div class="howtowork__container--goal-card">
             <img
-              class="howtowork__container-text--goal-card--img"
+              class="howtowork__container--goal-card--img"
               src="./public/icons/delivery-truck.svg"
               alt="delivery-truck"
             />
-            <p class="howtowork__container-text--goal-card--text1">
+            <p class="howtowork__container--goal-card--text1">
               Изучи весь макет заранее
             </p>
-            <p class="howtowork__container-text--goal-card--text2">
+            <p class="howtowork__container--goal-card--text2">
               Подумай как это будет работать на разных разрешениях и при скролле
             </p>
           </div>
-          <div class="howtowork__container-text--goal-card">
+          <div class="howtowork__container--goal-card">
             <img
-              class="howtowork__container-text--goal-card--img"
+              class="howtowork__container--goal-card--img"
               src="./public/icons/secure.svg"
               alt="secure"
             />
-            <p class="howtowork__container-text--goal-card--text1">
-              Сделай хорошо
-            </p>
-            <p class="howtowork__container-text--goal-card--text2">
+            <p class="howtowork__container--goal-card--text1">Сделай хорошо</p>
+            <p class="howtowork__container--goal-card--text2">
               Чтобы мы могли тебе доверить подобные задачи в будущем
             </p>
           </div>
-          <div class="howtowork__container-text--goal-card">
+          <div class="howtowork__container--goal-card">
             <img
-              class="howtowork__container-text--goal-card--img"
+              class="howtowork__container--goal-card--img"
               src="./public/icons/money-bags.svg"
               alt="money-bags"
             />
-            <p class="howtowork__container-text--goal-card--text1">
+            <p class="howtowork__container--goal-card--text1">
               Получи предложение
             </p>
-            <p class="howtowork__container-text--goal-card--text2">
+            <p class="howtowork__container--goal-card--text2">
               Ну тут все просто, не я придумал правила, но думаю так и будет)))
             </p>
           </div>
@@ -95,11 +96,18 @@
               деньги на процентах и штрафах.
             </p>
           </div>
+          <div class="third-block__container">
           <img
-            class="third-block__img"
-            src="./public/images/unnamed.jpg"
-            alt="unnamed"
-          />
+            class="third-block__container--img1"
+            src="./public/images/gazel.jpg"
+            alt="human-worker"
+          >
+          <img
+            class="third-block__container--img2"
+            src="./public/images/human-worker.svg"
+            alt="gazel"
+          >
+          </img>
         </div>
       </section>
       <section class="reviews">
@@ -120,9 +128,19 @@
           </svg>
 
           <div class="reviews__scroll-bar--container">
-            <!-- Здесь будут отрисовываются отзывы посредством reviews.js -->
-            <!-- class="reviews__scroll-bar--container--card" -->
-            <div class="reviews__scroll-bar--container--card"></div>
+            <!-- пример структуры отдельной карточки (они генерятся файлом reviews.js) -->
+            <!-- <div class="card-container">
+              <div class="image-container">
+                <img class="reviews__scroll-bar--container--card--img">
+                <div class="text-container">
+                  <p class="reviews__scroll-bar--container--card--p1"></p>
+                  <p class="reviews__scroll-bar--container--card--p2"></p>
+                </div>
+              </div>
+              <div class="review-container">
+                <p class="reviews__scroll-bar--container--card--p3"></p>
+              </div>
+            </div> -->
           </div>
 
           <svg
@@ -144,7 +162,8 @@
               </clipPath>
             </defs>
           </svg>
-          <svg
+        </div>
+        <svg
             xmlns="http://www.w3.org/2000/svg"
             width="108"
             height="8"
@@ -157,7 +176,6 @@
             <circle cx="79" cy="4" r="4" fill="#C2C8CD" />
             <circle cx="104" cy="4" r="4" fill="#C2C8CD" />
           </svg>
-        </div>
       </section>
       <section class="q-n-a">
         <h2 class="q-n-a__text">Вопросы и ответы</h2>
@@ -166,9 +184,15 @@
           <!-- class="q-n-a__block--text1" -->
           <!-- class="q-n-a__block--text2" -->
           <!-- class="q-n-a__block--p-svg" -->
+
+
+
           <div class="q-n-a__block--text1"></div>
           <div class="q-n-a__block--text2"></div>
           <div class="q-n-a__block--p-svg"></div>
+
+
+
         </div>
       </section>
       <section class="full-reviews">

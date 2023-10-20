@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem; /* Регулируйте отступы по своему усмотрению */
+  background-color: #7B61FF; /* Цвет фона заголовка */
+}
+
+/* Стили для переключателя */
+.header__toggle-container {
+  display: flex;
+  align-items: center
+  &--text {
+    color: #FFFFFF; /* Цвет текста */
+    font-size: 1.5rem; /* Размер шрифта */
+    /* Укажите семейство шрифтов, если необходимо */
+  }
+}
+
+/* Стили для меню навигации */
+.header__menu-container {
+  display: flex;
+
+  &--text {
+    color: #FFFFFF; /* Цвет текста ссылок */
+    font-size: 1.5rem; /* Размер шрифта ссылок */
+    margin-left: 2rem; /* Отступ между ссылками */
+    /* Укажите семейство шрифтов, если необходимо */
+  }
+}
