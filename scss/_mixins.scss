@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Graphik LCG";
-  src: url("./public/fonts/GraphikLCG/GraphikLCG-Regular.eot");
+  src: url("/public/fonts/GraphikLCG/GraphikLCG-Regular.eot");
   src: local("Graphik LCG Regular"), local("GraphikLCG-Regular"),
-    url("./public/fonts/GraphikLCG/GraphikLCG-Regular.eot?#iefix")
+    url("/public/fonts/GraphikLCG/GraphikLCG-Regular.eot?#iefix")
       format("embedded-opentype"),
-    url("./public/fonts/GraphikLCG/GraphikLCG-Regular.woff2") format("woff2"),
-    url("./public/fonts/GraphikLCG/GraphikLCG-Regular.woff") format("woff"),
-    url("./public/fonts/GraphikLCG/GraphikLCG-Regular.ttf") format("truetype");
+    url("/public/fonts/GraphikLCG/GraphikLCG-Regular.woff2") format("woff2"),
+    url("/public/fonts/GraphikLCG/GraphikLCG-Regular.woff") format("woff"),
+    url("/public/fonts/GraphikLCG/GraphikLCG-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
