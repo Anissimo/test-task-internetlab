@@ -241,32 +241,31 @@ html {
                   width: 2.75rem;
                   height: 2.75rem;
                 }
-          
+
                 .text-container {
                   display: flex;
-                  
+
                   .card-name,
                   .card-location {
                     flex: 0 1 auto;
                   }
                 }
-                
+
                 .review-container {
                   display: flex;
-                  
+
                   .card-review {
                     display: flex;
                   }
                 }
-                
               }
-              
             }
           }
-          
+        }
+      }
+    }
   }
 }
-
 .q-n-a {
   display: flex;
   flex-flow: column nowrap;
