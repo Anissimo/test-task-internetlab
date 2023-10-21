@@ -227,32 +227,43 @@ html {
       align-items: center;
       .reviews__scroll-bar--container {
         .card-container {
-          .image-container {
-            display: flex;
-            flex-flow: row wrap;
-            align-items: center;
-            .reviews__scroll-bar--container--card--img {
-            }
-
-            .text-container {
+          .reviews__scroll-bar--container {
+            .card {
               display: flex;
-              align-items: center;
-              align-content: center;
-              .reviews__scroll-bar--container--card--p1 {
+              flex-flow: column nowrap;
+              justify-content: center;
+              .img-container {
+                // Ваши стили для img-container
+                display: flex;
+                flex-flow: row wrap;
+                .card-img {
+                  // Ваши стили для изображения
+                  width: 2.75rem;
+                  height: 2.75rem;
+                }
+          
+                .text-container {
+                  display: flex;
+                  
+                  .card-name,
+                  .card-location {
+                    flex: 0 1 auto;
+                  }
+                }
+                
+                .review-container {
+                  display: flex;
+                  
+                  .card-review {
+                    display: flex;
+                  }
+                }
+                
               }
-              .reviews__scroll-bar--container--card--p2 {
-              }
-            }
-
-            .review-container {
-              display: flex;
-              .reviews__scroll-bar--container--card--p3 {
-              }
+              
             }
           }
-        }
-      }
-    }
+          
   }
 }
 

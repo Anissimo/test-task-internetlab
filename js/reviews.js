@@ -1,4 +1,4 @@
-import { reviewData } from "../public/icons/collections.js";
+import { reviewData } from "./collections.js";
 
 function createReviewCard(data) {
   var scrollBarContainer = document.querySelector(
@@ -6,47 +6,49 @@ function createReviewCard(data) {
   );
 
   if (scrollBarContainer) {
-    var cardContainer = document.createElement("div");
-    cardContainer.className = "card-container";
+    var card = document.createElement("div");
+    card.className = "card";
 
-    var imageContainer = document.createElement("div");
-    imageContainer.className = "image-container";
-    cardContainer.appendChild(imageContainer);
+    var imgContainer = document.createElement("div");
+    imgContainer.className = "img-container";
+    card.appendChild(imgContainer);
 
     var img = document.createElement("img");
     img.src = data.icon;
-    img.className = "reviews__scroll-bar--container--card--img";
-    imageContainer.appendChild(img);
+    img.className = "card-img";
+    imgContainer.appendChild(img);
 
     var textContainer = document.createElement("div");
     textContainer.className = "text-container";
-    imageContainer.appendChild(textContainer);
+    imgContainer.appendChild(textContainer);
 
     var nameP = document.createElement("p");
     nameP.textContent = data.name;
-    nameP.className = "reviews__scroll-bar--container--card--p1";
+    nameP.className = "card-name";
     textContainer.appendChild(nameP);
 
     var locationP = document.createElement("p");
     locationP.textContent = data.location;
-    locationP.className = "reviews__scroll-bar--container--card--p2";
+    locationP.className = "card-location";
     textContainer.appendChild(locationP);
 
     var reviewContainer = document.createElement("div");
     reviewContainer.className = "review-container";
-    cardContainer.appendChild(reviewContainer);
+    card.appendChild(reviewContainer);
 
     var reviewP = document.createElement("p");
     reviewP.textContent = data.review;
-    reviewP.className = "reviews__scroll-bar--container--card--p3";
+    reviewP.className = "card-review";
     reviewContainer.appendChild(reviewP);
 
-    scrollBarContainer.appendChild(cardContainer);
+    scrollBarContainer.appendChild(card);
   } else {
     console.log('Элемент с классом "reviews__scroll-bar--container" не найден');
   }
 }
 
-reviewData.forEach(function (data) {
-  createReviewCard(data);
+document.addEventListener("DOMContentLoaded", function () {
+  reviewData.forEach(function (data) {
+    createReviewCard(data);
+  });
 });

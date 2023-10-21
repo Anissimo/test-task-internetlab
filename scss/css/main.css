@@ -281,19 +281,19 @@ html {
   justify-content: center;
   align-items: center;
 }
-.reviews__scroll-bar--container .reviews__scroll-bar--container .card-container .image-container {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-}
-.reviews__scroll-bar--container .reviews__scroll-bar--container .card-container .image-container .text-container {
+.reviews__scroll-bar--container .reviews__scroll-bar--container .card-container .text-container {
   display: flex;
   align-items: center;
   align-content: center;
 }
-.reviews__scroll-bar--container .reviews__scroll-bar--container .card-container .image-container .review-container {
+.reviews__scroll-bar--container .reviews__scroll-bar--container .card-container .review-container {
   display: flex;
 }
+.reviews__scroll-bar--container .reviews__scroll-bar--container .card-container .image-container {
+  display: flex;
+  align-items: center;
+}
+
 .q-n-a {
   display: flex;
   flex-flow: column nowrap;
