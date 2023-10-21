@@ -55,7 +55,7 @@ function updateCardVisibility() {
   cards.forEach((card, index) => {
     if (index >= currentIndex && index < currentIndex + cardsToShow) {
       card.style.display = "flex";
-      card.style.animation = "slide-in 1s forwards";
+      card.style.animation = "slide-in 2s forwards";
     } else {
       card.style.display = "none";
     }
@@ -96,8 +96,28 @@ function createCircles() {
   }
 }
 
+// функция для изменения изображения при наведении и нажатии
+function changeImageOnHoverAndClick(arrow, normalSrc, activeSrc) {
+  arrow.addEventListener("mouseover", function () {
+    arrow.src = activeSrc;
+  });
+
+  arrow.addEventListener("mouseout", function () {
+    arrow.src = normalSrc;
+  });
+
+  arrow.addEventListener("mousedown", function () {
+    arrow.src = activeSrc;
+  });
+
+  arrow.addEventListener("mouseup", function () {
+    arrow.src = normalSrc;
+  });
+}
+
 // обработчики событий для кнопок
-document.querySelector(".fi-sr-angle-left").addEventListener("click", () => {
+const leftArrowElement = document.querySelector(".fi-sr-angle-left");
+leftArrowElement.addEventListener("click", () => {
   if (currentIndex > 0) {
     currentIndex--;
   } else {
@@ -108,7 +128,8 @@ document.querySelector(".fi-sr-angle-left").addEventListener("click", () => {
   updateCircles();
 });
 
-document.querySelector(".fi-sr-angle-right").addEventListener("click", () => {
+const rightArrowElement = document.querySelector(".fi-sr-angle-right");
+rightArrowElement.addEventListener("click", () => {
   if (currentIndex < reviewData.length - cardsToShow) {
     currentIndex++;
   } else {
@@ -118,6 +139,18 @@ document.querySelector(".fi-sr-angle-right").addEventListener("click", () => {
   updateCardVisibility();
   updateCircles();
 });
+
+// применяем функцию к обоим стрелкам
+changeImageOnHoverAndClick(
+  leftArrowElement,
+  "./public/icons/fi-sr-angle-left.svg",
+  "./public/icons/fi-sr-angle-left-active.svg"
+);
+changeImageOnHoverAndClick(
+  rightArrowElement,
+  "./public/icons/fi-sr-angle-right.svg",
+  "./public/icons/fi-sr-angle-right-active.svg"
+);
 
 // вызов функции при загрузке страницы
 document.addEventListener("DOMContentLoaded", function () {

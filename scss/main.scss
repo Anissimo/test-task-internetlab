@@ -153,15 +153,14 @@ html {
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
+    margin: 0 22rem;
     &--goal-card {
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: flex-start;
-      width: 21.3125rem;
-      height: 19.75rem;
       padding: 1.375rem 1.375rem 3.875rem 1.375rem;
-
+      width: 17.5rem;
       &--img {
         width: 4.5rem;
         height: 4.5rem;
@@ -246,7 +245,7 @@ html {
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    transform: translateX(50);
     opacity: 1;
   }
 }
@@ -266,25 +265,34 @@ html {
   }
 
   &__img {
+    width: 2.75rem;
+    height: 2.75rem;
   }
 
   &__text-wrap {
+    margin: 0;
   }
 
   &__name {
     @include headline-6;
+    margin: 0;
+    color: var(--Black, #191c1f);
   }
 
   &__loc {
-    @include body-18;
+    @include body-12;
+    margin: 0;
+    color: var(--Dark-gray, #5e646a);
   }
 
   &__review-wrap {
+    margin: 1.25rem 0 0 0;
   }
 
   &__review {
     @include body-14;
-    text-align: justify;
+    // text-align: justify;
+    color: var(--Black, #191c1f);
   }
 }
 

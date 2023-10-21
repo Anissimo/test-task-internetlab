@@ -200,15 +200,15 @@ html {
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
+  margin: 0 22rem;
 }
 .howtowork__container--goal-card {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
-  width: 21.3125rem;
-  height: 19.75rem;
   padding: 1.375rem 1.375rem 3.875rem 1.375rem;
+  width: 17.5rem;
 }
 .howtowork__container--goal-card--img {
   width: 4.5rem;
@@ -305,7 +305,7 @@ html {
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    transform: translateX(50);
     opacity: 1;
   }
 }
@@ -324,19 +324,33 @@ html {
   align-content: center;
   gap: 1rem;
 }
+.card__img {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+.card__text-wrap {
+  margin: 0;
+}
 .card__name {
   font-family: "Graphik LCG";
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
   line-height: 1.5rem;
+  margin: 0;
+  color: var(--Black, #191c1f);
 }
 .card__loc {
   font-family: "Graphik LCG";
-  font-size: 1.125rem;
+  font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 1rem;
+  margin: 0;
+  color: var(--Dark-gray, #5e646a);
+}
+.card__review-wrap {
+  margin: 1.25rem 0 0 0;
 }
 .card__review {
   font-family: "Graphik LCG";
@@ -344,7 +358,7 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5rem;
-  text-align: justify;
+  color: var(--Black, #191c1f);
 }
 
 .q-n-a {
