@@ -57,7 +57,7 @@ html {
   align-items: center;
   position: relative;
   background-size: cover;
-  background-image: url("/public/images/lunch-atop-a-skyscraper-1.png");
+  background-image: url("./public/images/lunch-atop-a-skyscraper-1.png");
   z-index: 0;
 }
 .main::after {
