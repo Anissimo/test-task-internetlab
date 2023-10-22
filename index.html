@@ -136,45 +136,46 @@
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" width="108" height="8" viewBox="0 0 108 8" fill="none"></svg>
       </section>
-      <section class="q-n-a">
-        <h2 class="q-n-a__text">Вопросы и ответы</h2>
-        <div class="q-n-a__block">
-          <!-- Здесь будут отрисовываются отзывы посредством main.js -->
-          <!-- class="q-n-a__block--text1" -->
-          <!-- class="q-n-a__block--text2" -->
-          <!-- class="q-n-a__block--p-svg" -->
-
-
-
-          <div class="q-n-a__block--text1"></div>
-          <div class="q-n-a__block--text2"></div>
-          <div class="q-n-a__block--p-svg"></div>
-
-
-
+      <section class="qna">
+        <h2 class="qna__text">Вопросы и ответы</h2>
+        <div class="qna__block">
+            <!-- Здесь будут отрисовываются отзывы посредством QnA.js -->
+            <!-- <div class="qna__container">
+                <div class="qna__container-inner">
+                    <div class="qna__text1"></div>
+                    <div class="qna__text2"></div>
+                </div>
+                <div class="qna__svg-container">
+                  <div class="qna__block-svg-plus"></div>
+                  <div class="qna__block-svg-circle"></div>
+                </div>
+            </div> -->
         </div>
-      </section>
+    </section>
+    
       <section class="full-reviews">
         <!-- Здесь будут отрисовываются отзывы посредством fullReviews.js -->
         <!-- class="full-reviews__card" -->
         <!-- class="full-reviews__card--text1" -->
         <!-- class="full-reviews__card--text2" -->
-        <div class="full-reviews__card"></div>
-        <div class="full-reviews__card--text1"></div>
-        <div class="full-reviews__card--text2"></div>
       </section>
       <form class="form">
         <h2 class="form__text">Отправь форму</h2>
-        <input class="form__input" type="text" name="name" placeholder="Имя" />
-        <input
-          class="form__input"
-          type="tel"
-          name="phone"
-          placeholder="Телефон"
-        />
-        <input class="form__checkbox" type="checkbox" name="consent" />
-        Согласен, отказываюсь
-        <button class="form__button" type="submit">Отправить</button>
+        <div class="form__container">
+          <input class="form__input" type="text" name="name" placeholder="Имя" />
+          <input
+            class="form__input"
+            type="tel"
+            name="phone"
+            placeholder="Телефон"
+          />
+          <div class="form__checkbox-container">
+            <input class="form__checkbox-container--checkbox" type="checkbox" name="consent" />
+            <p class="form__checkbox-container--text">Согласен, отказываюсь</p>
+          </div>
+          
+          <button class="form__button" type="submit">Отправить</button>
+        </div>
       </form>
       <footer class="footer">
         <p class="footer__text">© 2021 Лаборатория интернет</p>
@@ -185,7 +186,7 @@
     <script type="module" src="js/main.js"></script>
     <script type="module" src="js/howToWork.js"></script>
     <script type="module" src="js/reviews.js"></script>
-    <script type="module" src="js/questionsAndAnswers.js"></script>
+    <script type="module" src="js/QnA.js"></script>
     <script type="module" src="js/fullReviews.js"></script>
     <script type="module" src="js/form.js"></script>
     <link rel="stylesheet" type="text/css" href="./scss/css/main.css" />

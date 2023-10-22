@@ -361,16 +361,186 @@ html {
   color: var(--Black, #191c1f);
 }
 
-.q-n-a {
+.qna {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin: 5rem 14.25rem;
 }
-.q-n-a__text {
+.qna__svg-container {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.qna__text {
   font-family: "Graphik LCG";
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 600;
   line-height: 3.5rem;
+}
+.qna__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.qna__container:hover {
+  color: #2a6cea;
+}
+.qna__container-inner {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  border-top: 1px solid #eceff2;
+}
+.qna__block-text1 {
+  font-family: "Graphik LCG";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+}
+.qna__block-text2 {
+  margin-top: 1.5rem;
+  font-family: "Graphik LCG";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #5e646a;
+}
+.qna__block-svg-circle {
+  position: relative;
+}
+.qna__block-svg-plus {
+  position: absolute;
+  z-index: 1;
+}
+
+.full-reviews {
+  margin: 0 11rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 4.25rem;
+}
+.full-reviews__card {
+  flex: 1 0 calc(50% - 1rem);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.06rem;
+}
+.full-reviews__card--text1 {
+  font-family: "Graphik LCG";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+}
+.full-reviews__card--text2 {
+  font-family: "Graphik LCG";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+.form {
+  margin: 5rem 17.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.form__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+.form__text {
+  font-family: "Graphik LCG";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.5rem;
+  color: #191c1f;
+}
+.form__input {
+  width: 24rem;
+  height: 4rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #c2c8cd;
+  font-family: "Graphik LCG";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+.form__input:focus {
+  outline: none;
+}
+.form__input.valid {
+  background-image: url("..//public/icons/text-input-check-circle.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.form__input.invalid {
+  background-image: url("..//public/icons/text-input-cancel.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.form__checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.form__checkbox-container--text {
+  font-family: "Graphik LCG";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+  color: #191c1f;
+}
+.form__checkbox-container--checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.form__button {
+  font-family: "Graphik LCG";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 1.25rem 2.5rem;
+  background: var(--Primary, #2a6cea);
+  border-radius: 0.25rem;
+  border: none;
+  color: #fff;
+}
+.form__button:hover {
+  background: #397dff;
+  color: #fff;
+}
+.form__button:active {
+  border: 1px solid #c2c8cd;
+  color: #191c1f;
+}
+.form__button:focus {
+  background: #eceff2;
+  color: #191c1f;
+}
+
+.footer {
+  margin: 1.75rem 0rem;
+}
+.footer__text {
+  font-family: "Graphik LCG";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
 }

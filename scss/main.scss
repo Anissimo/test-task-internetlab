@@ -296,52 +296,166 @@ html {
   }
 }
 
-.q-n-a {
+.qna {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin: 5rem 14.25rem;
+  &__svg-container {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
   &__text {
     @include headline-2;
   }
-
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    &:hover {
+      color: #2a6cea;
+    }
+  }
+  &__container-inner {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    border-top: 1px solid #eceff2;
+  }
   &__block {
-    &--text1 {
+    // Ваши стили здесь
+
+    &-text1 {
+      @include body-18-s-bold;
     }
 
-    &--text2 {
+    &-text2 {
+      margin-top: 1.5rem;
+      @include body-18;
+      color: #5e646a;
     }
-
-    &--p-svg {
+    &-svg-circle {
+      position: relative;
+      // z-index: 1;
+    }
+    &-svg-plus {
+      position: absolute;
+      z-index: 1;
     }
   }
 }
 
 .full-reviews {
+  margin: 0 11rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 4.25rem;
   &__card {
+    flex: 1 0 calc(50% - 1rem);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.06rem;
     &--text1 {
+      @include body-18-s-bold;
     }
 
     &--text2 {
+      @include body-16;
     }
   }
 }
 
 .form {
+  margin: 5rem 17.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+  }
   &__text {
+    @include headline-2;
+    color: #191c1f;
   }
 
   &__input {
+    width: 24rem;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #c2c8cd;
+    @include body-16;
+    &:focus {
+      outline: none;
+    }
+    &.valid {
+      background-image: url("..//public/icons/text-input-check-circle.svg");
+      // "../../public/icons/text-input-check-circle.svg"
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+    &.invalid {
+      background-image: url("..//public/icons/text-input-cancel.svg");
+      // "../../public/icons/text-input-cancel.svg"
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
   }
 
-  &__checkbox {
+  &__checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    &--text {
+      @include body-16;
+      color: #191c1f;
+    }
+    &--checkbox {
+      // background-image: url("..//public/icons/checkbox-check.svg");
+      width: 1.5rem;
+      height: 1.5rem;
+
+      &:checked {
+        // background-color: #2a6cea;
+        // border-color: #2a6cea;
+      }
+    }
   }
 
   &__button {
+    @include headline-5;
+    padding: 1.25rem 2.5rem;
+    background: var(--Primary, #2a6cea);
+    border-radius: 0.25rem;
+    border: none;
+    color: #fff;
+    &:hover {
+      background: #397dff;
+      color: #fff;
+    }
+
+    &:active {
+      border: 1px solid #c2c8cd;
+      color: #191c1f;
+    }
+
+    &:focus {
+      background: #eceff2;
+      color: #191c1f;
+    }
   }
 }
 
 .footer {
+  margin: 1.75rem 0rem;
   &__text {
+    @include body-18;
   }
 }
