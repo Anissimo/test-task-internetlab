@@ -181,11 +181,11 @@ html {
 
 .howtowork {
   display: flex;
-  margin-top: 5rem 20rem;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   align-content: center;
+  width: 100%;
 }
 .howtowork__text {
   font-family: "Graphik LCG";
@@ -472,6 +472,7 @@ html {
   height: 4rem;
   padding: 1rem;
   border-radius: 0.25rem;
+  background: #f6f8fa;
   border: 1px solid #c2c8cd;
   font-family: "Graphik LCG";
   font-size: 1rem;
@@ -481,16 +482,33 @@ html {
 }
 .form__input:focus {
   outline: none;
+  border: 1px solid #83898f;
 }
 .form__input.valid {
-  background-image: url("..//public/icons/text-input-check-circle.svg");
+  background-image: url("../../public/icons/text-input-check-circle.svg");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: calc(100% - 1.38rem) center;
 }
 .form__input.invalid {
-  background-image: url("..//public/icons/text-input-cancel.svg");
+  background-image: url("../../public/icons/text-input-cancel.svg");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: calc(100% - 1.38rem) center;
+  border-color: red;
+}
+.form__input-error {
+  font-family: "Graphik LCG";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+  position: absolute;
+  bottom: -0.56rem;
+  left: 0;
+  color: red;
+  display: none;
+}
+.form__input.invalid + .form__input-error {
+  display: block;
 }
 .form__checkbox-container {
   display: flex;
@@ -506,8 +524,15 @@ html {
   color: #191c1f;
 }
 .form__checkbox-container--checkbox {
+  background-image: url("..//public/icons/kekbox-checkbox-unchecked.svg");
   width: 1.5rem;
   height: 1.5rem;
+}
+.form__checkbox-container--checkbox:checked {
+  background-image: url("..//public/icons/checkbox-check.svg");
+  background-color: #2a6cea;
+  border-color: #2a6cea;
+  fill: #2a6cea;
 }
 .form__button {
   font-family: "Graphik LCG";

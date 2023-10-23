@@ -162,13 +162,19 @@
       <form class="form">
         <h2 class="form__text">Отправь форму</h2>
         <div class="form__container">
-          <input class="form__input" type="text" name="name" placeholder="Имя" />
-          <input
-            class="form__input"
-            type="tel"
-            name="phone"
-            placeholder="Телефон"
-          />
+          <div>
+            <input class="form__input" type="text" name="name" placeholder="Имя" />
+            <p class="form__input-error">Ваше имя слишком длинное ))</p>
+          </div>
+          <div>
+            <input
+              class="form__input"
+              type="tel"
+              name="phone"
+              placeholder="Телефон"
+            />
+            <p class="form__input-error">Можно вводить только цифры</p>
+          </div>
           <div class="form__checkbox-container">
             <input class="form__checkbox-container--checkbox" type="checkbox" name="consent" />
             <p class="form__checkbox-container--text">Согласен, отказываюсь</p>
@@ -177,6 +183,10 @@
           <button class="form__button" type="submit">Отправить</button>
         </div>
       </form>
+      
+      
+      
+      
       <footer class="footer">
         <p class="footer__text">© 2021 Лаборатория интернет</p>
       </footer>

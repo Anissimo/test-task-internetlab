@@ -139,11 +139,13 @@ html {
 
 .howtowork {
   display: flex;
-  margin-top: 5rem 20rem;
+  // padding: 5rem 20rem;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   align-content: center;
+  width: 100%;
+
   &__text {
     @include headline-2;
     color: var(--Black, #191c1f);
@@ -390,26 +392,41 @@ html {
     height: 4rem;
     padding: 1rem;
     border-radius: 0.25rem;
+    background: #f6f8fa;
     border: 1px solid #c2c8cd;
     @include body-16;
     &:focus {
       outline: none;
+      border: 1px solid #83898f;
     }
     &.valid {
-      background-image: url("..//public/icons/text-input-check-circle.svg");
-      // "../../public/icons/text-input-check-circle.svg"
+      background-image: url("../../public/icons/text-input-check-circle.svg");
       background-repeat: no-repeat;
-      background-position: right center;
+      background-position: calc(100% - 1.38rem) center;
     }
+
     &.invalid {
-      background-image: url("..//public/icons/text-input-cancel.svg");
-      // "../../public/icons/text-input-cancel.svg"
+      background-image: url("../../public/icons/text-input-cancel.svg");
       background-repeat: no-repeat;
-      background-position: right center;
+      background-position: calc(100% - 1.38rem) center;
+      border-color: red;
     }
+  }
+  &__input-error {
+    @include body-12;
+    position: absolute;
+    bottom: -0.56rem;
+    left: 0;
+    color: red;
+    display: none; // По умолчанию текст ошибки скрыт
+  }
+
+  &__input.invalid + &__input-error {
+    display: block;
   }
 
   &__checkbox-container {
+    // background-color: #000;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -418,13 +435,18 @@ html {
       color: #191c1f;
     }
     &--checkbox {
-      // background-image: url("..//public/icons/checkbox-check.svg");
+      background-image: url("..//public/icons/kekbox-checkbox-unchecked.svg");
+      // border: #c2c8cd;
       width: 1.5rem;
       height: 1.5rem;
 
+      &:focus {
+      }
       &:checked {
-        // background-color: #2a6cea;
-        // border-color: #2a6cea;
+        background-image: url("..//public/icons/checkbox-check.svg");
+        background-color: #2a6cea;
+        border-color: #2a6cea;
+        fill: #2a6cea;
       }
     }
   }
