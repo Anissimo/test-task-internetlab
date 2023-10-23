@@ -132,6 +132,7 @@ html {
       @include body-16;
       &:hover {
         text-decoration: underline;
+        cursor: pointer;
       }
     }
   }

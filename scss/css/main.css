@@ -177,6 +177,7 @@ html {
 }
 .header__menu--text:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .howtowork {
